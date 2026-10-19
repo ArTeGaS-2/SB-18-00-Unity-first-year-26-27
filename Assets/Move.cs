@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public GameObject playerCamera;
+    [Header("Переміщення")]
     public float speed = 5f; // Шивдкість руху (дробове число)
+    [Header("Камера")]
+    public GameObject playerCamera;
     public float mouseSens = 5f; // Чутливість миші (теж float - дробова)
+    public Vector3 cameraPos = Vector3.zero;
 
     Rigidbody rb; // Фізичний компонент
+    float yaw, pitch; // yaw - право/ліво, pitch - вгору/вниз
 
     private void Start()
     {
@@ -18,11 +22,11 @@ public class Move : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        transform.Translate(
-            horizontal * speed * Time.deltaTime,
-            0,
-            vertical * speed * Time.deltaTime
-            );
+        float horizontal_M = Input.GetAxis("Mouse X");
+        float vertical_M = Input.GetAxis("Mouse Y");
+
+        Vector3 move = Quaternion.Euler(0, yaw, 0) * new Vector3(horizontal, 0, vertical);
+        transform.Translate(move * speed * Time.deltaTime, Space.World);
 
         playerCamera.transform.position = new Vector3(
             transform.position.x,
@@ -30,14 +34,8 @@ public class Move : MonoBehaviour
             transform.position.z
             );
 
-        float horizontal_M = Input.GetAxis("Mouse X");
-        float vertical_M = Input.GetAxis("Mouse Y");
-
-        transform.Rotate(0, horizontal_M * mouseSens, 0);
-        playerCamera.transform.Rotate(
-            vertical_M * mouseSens,
-            0,
-            0);
-
+        yaw += horizontal_M * mouseSens;
+        pitch = Mathf.Clamp(pitch - vertical_M * mouseSens, -85f, 85f);
+        playerCamera.transform.rotation = Quaternion.Euler(pitch, yaw, 0);
     }
 }
