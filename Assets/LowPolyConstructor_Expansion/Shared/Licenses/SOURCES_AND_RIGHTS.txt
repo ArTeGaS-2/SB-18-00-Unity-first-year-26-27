@@ -1,0 +1,30 @@
+ДЖЕРЕЛА ТА ПРАВА СТОРОННІХ ТВАРИННИХ ОСНОВ
+
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+
+Teh_Bucket — Boar, CC0:
+https://opengameart.org/content/boar
+
+CDmir, TinyWorlds — Rabbit, Deer Female, Old Deer Male, CC0:
+https://opengameart.org/content/rabbit-0
+https://opengameart.org/content/deer-female
+https://opengameart.org/content/old-deer-male
+Козуля — суттєво змінена похідна Deer Female; нові роги, пропорції, матеріали й idle.
+
+Micket — Wolf, White Rhinoceros, Cobra, CC0:
+https://opengameart.org/content/wolf-1
+https://opengameart.org/content/white-rhinoceros
+https://opengameart.org/content/cobra-0
+
+byzmod3d — Cat / Low Poly Animal Pack (WIP), CC0:
+https://opengameart.org/content/low-poly-animal-pack-wip
+
+Grab3D — Raccoon, Lynx, White-Tailed Deer, Wolf, Cat, CC0:
+https://grab3d.com/models/animals/raccoon/
+https://grab3d.com/models/animals/lynx/
+https://grab3d.com/models/animals/deer/
+https://grab3d.com/models/animals/wolf/
+https://grab3d.com/models/animals/cat/
+Розкриття походження: AI-assisted Meshy основи та текстури, доопрацьовані видавцем у Blender. Для цього набору підготовлені нові retopology/UV/атласи, звичайні риги, idle, LOD і варіанти матеріалів. European_Wildcat — анатомічна ігрова адаптація domestic Cat; першоджерело не позначене готовим лісовим котом.
+
+Вказані CC0-ліцензії є деклараціями первинних публікацій/видавців, не незалежною гарантією авторських прав. Права початкових та власних матеріалів проєкту залишаються за їхніми чинними умовами; весь пакет не оголошується CC0 лише на підставі ліцензій тваринних основ.
